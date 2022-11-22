@@ -1,0 +1,7 @@
+fn fibonacci {
+    
+}
+
+fn main {
+    1 2 + 3 + 6 == println
+}
