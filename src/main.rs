@@ -29,4 +29,21 @@ mod tests {
             )]
         );
     }
+
+    #[test]
+    fn number_lex_test() {
+        assert_eq!(
+            lex("main".to_string(), "1 2 3.0".to_string()),
+            vec![]
+        );
+    }
+
+    #[test]
+    fn symbol_lex_test() {
+        assert_eq!(
+            lex("main".to_string(), "1 +".to_string()),
+            vec![]
+        );
+    }
+
 }
